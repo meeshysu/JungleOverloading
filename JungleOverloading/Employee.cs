@@ -31,5 +31,18 @@ namespace JungleOverloading
             "City Cafe",
             "Fat Mo's"
         };
+
+
+        public string RandomRestaurant()
+        {
+            Random unplanned = new Random();
+            int unplannedRestaurantChoice = unplanned.Next(RestaurantList.Count);
+            return (RestaurantList[unplannedRestaurantChoice]);
+        }
+
+        public void Eat()
+        {
+            Console.WriteLine($"{FirstName} {LastName} is eating at {RandomRestaurant()}");
+        }
     }
 }
