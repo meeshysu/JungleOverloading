@@ -44,5 +44,20 @@ namespace JungleOverloading
         {
             Console.WriteLine($"{FirstName} {LastName} is eating at {RandomRestaurant()}");
         }
+
+        public void Eat(string food)
+        {
+            Console.WriteLine($"{FirstName} brought back this {food} and ate it at the office.");
+        }
+
+        public void Eat(List<Employee> companions)
+        {
+            string[] employeesFriend = { "Tess", "Catherine", "Evan", "JT", "Heather" };
+            Random rand = new Random();
+            int index = rand.Next(employeesFriend.Length);
+            foreach (var companion in companions)
+            Console.WriteLine($"{FirstName} went to {RandomRestaurant()} with {employeesFriend[index]}.");
+        }
     }
 }
+
