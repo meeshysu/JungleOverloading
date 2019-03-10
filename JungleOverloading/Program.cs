@@ -6,7 +6,15 @@ namespace JungleOverloading
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var catherine = new Employee("Catherine", "Chandler");
+            var vincent = new Employee("Vincent", "Keller");
+            var heather = new Employee("Heather", "Chandler");
+
+            catherine.AddEmployees(catherine);
+            vincent.AddEmployees(vincent);
+            heather.AddEmployees(heather);
+
+
         }
     }
 }

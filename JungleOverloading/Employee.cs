@@ -17,7 +17,19 @@ namespace JungleOverloading
             LastName = lastName;
         }
 
+        public void AddEmployees(Employee newEmployee)
+        {
+            EmployeeList.Add(newEmployee);
+        }
 
-
+        public List<string> RestaurantList = new List<string>
+        {
+            "Panera",
+            "Just Love",
+            "FireHouse Subs",
+            "Sir Pizza",
+            "City Cafe",
+            "Fat Mo's"
+        };
     }
 }
