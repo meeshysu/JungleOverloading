@@ -27,6 +27,7 @@ namespace JungleOverloading
             randomChoice.Eat();
             randomChoice.Eat("sandwich");
             randomChoice.Eat(randomChoice.EmployeeList);
+            randomChoice.Eat("clams", randomChoice.EmployeeList);
 
             Console.ReadLine();
         }
